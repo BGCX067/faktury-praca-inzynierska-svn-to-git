@@ -1,0 +1,1671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FakturyDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="FakturyDBEntitiess" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Banki" EntityType="FakturyDBModel.Banki" />
+    <EntitySet Name="DanePrzedsiebiorstwa" EntityType="FakturyDBModel.DanePrzedsiebiorstwa" />
+    <EntitySet Name="DokumentyKupna" EntityType="FakturyDBModel.DokumentyKupna" />
+    <EntitySet Name="DokumentySprzedazy" EntityType="FakturyDBModel.DokumentySprzedazy" />
+    <EntitySet Name="Dostawcy" EntityType="FakturyDBModel.Dostawcy" />
+    <EntitySet Name="FormyPlatnosci" EntityType="FakturyDBModel.FormyPlatnosci" />
+    <EntitySet Name="JednostkiMiar" EntityType="FakturyDBModel.JednostkiMiar" />
+    <EntitySet Name="Klienci" EntityType="FakturyDBModel.Klienci" />
+    <EntitySet Name="KodyPocztowe" EntityType="FakturyDBModel.KodyPocztowe" />
+    <EntitySet Name="Kraje" EntityType="FakturyDBModel.Kraje" />
+    <EntitySet Name="Miejscowosci" EntityType="FakturyDBModel.Miejscowosci" />
+    <EntitySet Name="ProduktyFakturyKupna" EntityType="FakturyDBModel.ProduktyFakturyKupna" />
+    <EntitySet Name="ProduktyFakturySprzedazy" EntityType="FakturyDBModel.ProduktyFakturySprzedazy" />
+    <EntitySet Name="Role" EntityType="FakturyDBModel.Role" />
+    <EntitySet Name="RozliczeniaKupna" EntityType="FakturyDBModel.RozliczeniaKupna" />
+    <EntitySet Name="RozliczeniaSprzedazy" EntityType="FakturyDBModel.RozliczeniaSprzedazy" />
+    <EntitySet Name="StawkiVat" EntityType="FakturyDBModel.StawkiVat" />
+    <EntitySet Name="sysdiagrams" EntityType="FakturyDBModel.sysdiagrams" />
+    <EntitySet Name="TowaryUslugi" EntityType="FakturyDBModel.TowaryUslugi" />
+    <EntitySet Name="Uzytkownicy" EntityType="FakturyDBModel.Uzytkownicy" />
+    <AssociationSet Name="FK_Banki_Uzytkownicy" Association="FakturyDBModel.FK_Banki_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Banki" EntitySet="Banki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Banki_Uzytkownicy1" Association="FakturyDBModel.FK_Banki_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Banki" EntitySet="Banki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Banki_Uzytkownicy2" Association="FakturyDBModel.FK_Banki_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Banki" EntitySet="Banki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Banki" Association="FakturyDBModel.FK_DokumentySprzedazy_Banki">
+      <End Role="Banki" EntitySet="Banki" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanePrzedsiebiorstwa_KodyPocztowe2" Association="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe2">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="DanePrzedsiebiorstwa" EntitySet="DanePrzedsiebiorstwa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanePrzedsiebiorstwa_KodyPocztowe3" Association="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe3">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="DanePrzedsiebiorstwa" EntitySet="DanePrzedsiebiorstwa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanePrzedsiebiorstwa_Uzytkownicy2" Association="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DanePrzedsiebiorstwa" EntitySet="DanePrzedsiebiorstwa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanePrzedsiebiorstwa_Uzytkownicy3" Association="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy3">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DanePrzedsiebiorstwa" EntitySet="DanePrzedsiebiorstwa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanePrzedsiebiorstwa_Uzytkownicy4" Association="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy4">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DanePrzedsiebiorstwa" EntitySet="DanePrzedsiebiorstwa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentyKupna_Dostawcy" Association="FakturyDBModel.FK_DokumentyKupna_Dostawcy">
+      <End Role="Dostawcy" EntitySet="Dostawcy" />
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentyKupna_FormyPlatnosci" Association="FakturyDBModel.FK_DokumentyKupna_FormyPlatnosci">
+      <End Role="FormyPlatnosci" EntitySet="FormyPlatnosci" />
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentyKupna_Uzytkownicy1" Association="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentyKupna_Uzytkownicy2" Association="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturyKupna_DokumentyKupna" Association="FakturyDBModel.FK_ProduktyFakturyKupna_DokumentyKupna">
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+      <End Role="ProduktyFakturyKupna" EntitySet="ProduktyFakturyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaKupna_DokumentyKupna" Association="FakturyDBModel.FK_RozliczeniaKupna_DokumentyKupna">
+      <End Role="DokumentyKupna" EntitySet="DokumentyKupna" />
+      <End Role="RozliczeniaKupna" EntitySet="RozliczeniaKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_FormyPlatnosci" Association="FakturyDBModel.FK_DokumentySprzedazy_FormyPlatnosci">
+      <End Role="FormyPlatnosci" EntitySet="FormyPlatnosci" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Klienci" Association="FakturyDBModel.FK_DokumentySprzedazy_Klienci">
+      <End Role="Klienci" EntitySet="Klienci" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Kraje" Association="FakturyDBModel.FK_DokumentySprzedazy_Kraje">
+      <End Role="Kraje" EntitySet="Kraje" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Miejscowosci" Association="FakturyDBModel.FK_DokumentySprzedazy_Miejscowosci">
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Uzytkownicy" Association="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DokumentySprzedazy_Uzytkownicy1" Association="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturySprzedazy_DokumentySprzedazy" Association="FakturyDBModel.FK_ProduktyFakturySprzedazy_DokumentySprzedazy">
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+      <End Role="ProduktyFakturySprzedazy" EntitySet="ProduktyFakturySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaSprzedazy_DokumentySprzedazy" Association="FakturyDBModel.FK_RozliczeniaSprzedazy_DokumentySprzedazy">
+      <End Role="DokumentySprzedazy" EntitySet="DokumentySprzedazy" />
+      <End Role="RozliczeniaSprzedazy" EntitySet="RozliczeniaSprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dostawcy_KodyPocztowe" Association="FakturyDBModel.FK_Dostawcy_KodyPocztowe">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="Dostawcy" EntitySet="Dostawcy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dostawcy_KodyPocztowe1" Association="FakturyDBModel.FK_Dostawcy_KodyPocztowe1">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="Dostawcy" EntitySet="Dostawcy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dostawcy_Uzytkownicy" Association="FakturyDBModel.FK_Dostawcy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Dostawcy" EntitySet="Dostawcy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dostawcy_Uzytkownicy1" Association="FakturyDBModel.FK_Dostawcy_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Dostawcy" EntitySet="Dostawcy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormyPlatnosci_Uzytkownicy" Association="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="FormyPlatnosci" EntitySet="FormyPlatnosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormyPlatnosci_Uzytkownicy1" Association="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="FormyPlatnosci" EntitySet="FormyPlatnosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormyPlatnosci_Uzytkownicy2" Association="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="FormyPlatnosci" EntitySet="FormyPlatnosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JednostkiMiar_Uzytkownicy" Association="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="JednostkiMiar" EntitySet="JednostkiMiar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JednostkiMiar_Uzytkownicy1" Association="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="JednostkiMiar" EntitySet="JednostkiMiar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JednostkiMiar_Uzytkownicy2" Association="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="JednostkiMiar" EntitySet="JednostkiMiar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowaryUslugi_JednostkiMiar" Association="FakturyDBModel.FK_TowaryUslugi_JednostkiMiar">
+      <End Role="JednostkiMiar" EntitySet="JednostkiMiar" />
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klienci_KodyPocztowe" Association="FakturyDBModel.FK_Klienci_KodyPocztowe">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="Klienci" EntitySet="Klienci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klienci_KodyPocztowe1" Association="FakturyDBModel.FK_Klienci_KodyPocztowe1">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="Klienci" EntitySet="Klienci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klienci_Uzytkownicy" Association="FakturyDBModel.FK_Klienci_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Klienci" EntitySet="Klienci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Klienci_Uzytkownicy1" Association="FakturyDBModel.FK_Klienci_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Klienci" EntitySet="Klienci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KodyPocztowe_Miejscowosci" Association="FakturyDBModel.FK_KodyPocztowe_Miejscowosci">
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KodyPocztowe_UzytkownikBlokujacy" Association="FakturyDBModel.FK_KodyPocztowe_UzytkownikBlokujacy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KodyPocztowe_UzytkownikModyfikujacy" Association="FakturyDBModel.FK_KodyPocztowe_UzytkownikModyfikujacy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KodyPocztowe_UzytkownikWlasciciel" Association="FakturyDBModel.FK_KodyPocztowe_UzytkownikWlasciciel">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_KodyPocztowe" Association="FakturyDBModel.FK_Uzytkownicy_KodyPocztowe">
+      <End Role="KodyPocztowe" EntitySet="KodyPocztowe" />
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kraje_Uzytkownicy" Association="FakturyDBModel.FK_Kraje_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Kraje" EntitySet="Kraje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kraje_Uzytkownicy1" Association="FakturyDBModel.FK_Kraje_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Kraje" EntitySet="Kraje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kraje_Uzytkownicy2" Association="FakturyDBModel.FK_Kraje_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Kraje" EntitySet="Kraje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Miejscowosci_Kraje" Association="FakturyDBModel.FK_Miejscowosci_Kraje">
+      <End Role="Kraje" EntitySet="Kraje" />
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Miejscowosci_Uzytkownicy" Association="FakturyDBModel.FK_Miejscowosci_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Miejscowosci_Uzytkownicy1" Association="FakturyDBModel.FK_Miejscowosci_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Miejscowosci_Uzytkownicy2" Association="FakturyDBModel.FK_Miejscowosci_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Miejscowosci" EntitySet="Miejscowosci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturyKupna_TowaryUslugi" Association="FakturyDBModel.FK_ProduktyFakturyKupna_TowaryUslugi">
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+      <End Role="ProduktyFakturyKupna" EntitySet="ProduktyFakturyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturyKupna_Uzytkownicy" Association="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="ProduktyFakturyKupna" EntitySet="ProduktyFakturyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturyKupna_Uzytkownicy1" Association="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="ProduktyFakturyKupna" EntitySet="ProduktyFakturyKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturySprzedazy_TowaryUslugi" Association="FakturyDBModel.FK_ProduktyFakturySprzedazy_TowaryUslugi">
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+      <End Role="ProduktyFakturySprzedazy" EntitySet="ProduktyFakturySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturySprzedazy_Uzytkownicy" Association="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="ProduktyFakturySprzedazy" EntitySet="ProduktyFakturySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProduktyFakturySprzedazy_Uzytkownicy1" Association="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="ProduktyFakturySprzedazy" EntitySet="ProduktyFakturySprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_Role" Association="FakturyDBModel.FK_Uzytkownicy_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaKupna_Uzytkownicy" Association="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="RozliczeniaKupna" EntitySet="RozliczeniaKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaKupna_Uzytkownicy1" Association="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="RozliczeniaKupna" EntitySet="RozliczeniaKupna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaSprzedazy_Uzytkownicy" Association="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="RozliczeniaSprzedazy" EntitySet="RozliczeniaSprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaSprzedazy_Uzytkownicy1" Association="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="RozliczeniaSprzedazy" EntitySet="RozliczeniaSprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RozliczeniaSprzedazy_Uzytkownicy2" Association="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="RozliczeniaSprzedazy" EntitySet="RozliczeniaSprzedazy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StawkiVat_Uzytkownicy" Association="FakturyDBModel.FK_StawkiVat_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="StawkiVat" EntitySet="StawkiVat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StawkiVat_Uzytkownicy1" Association="FakturyDBModel.FK_StawkiVat_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="StawkiVat" EntitySet="StawkiVat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StawkiVat_Uzytkownicy2" Association="FakturyDBModel.FK_StawkiVat_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="StawkiVat" EntitySet="StawkiVat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowaryUslugi_StawkiVat" Association="FakturyDBModel.FK_TowaryUslugi_StawkiVat">
+      <End Role="StawkiVat" EntitySet="StawkiVat" />
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowaryUslugi_UzytkownikBlokujacy" Association="FakturyDBModel.FK_TowaryUslugi_UzytkownikBlokujacy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowaryUslugi_UzytkownikWlasciciel" Association="FakturyDBModel.FK_TowaryUslugi_UzytkownikWlasciciel">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="TowaryUslugi" EntitySet="TowaryUslugi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_Uzytkownicy" Association="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Uzytkownicy1" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_Uzytkownicy1" Association="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy1">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Uzytkownicy1" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_Uzytkownicy2" Association="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy2">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Uzytkownicy1" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzytkownicy_Uzytkownicy4" Association="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy4">
+      <End Role="Uzytkownicy" EntitySet="Uzytkownicy" />
+      <End Role="Uzytkownicy1" EntitySet="Uzytkownicy" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Banki">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Type="Int32" Name="BankID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrBanku" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy" FromRole="Banki" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy1" FromRole="Banki" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy2" FromRole="Banki" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Banki" FromRole="Banki" ToRole="DokumentySprzedazy" />
+  </EntityType>
+  <EntityType Name="DanePrzedsiebiorstwa">
+    <Key>
+      <PropertyRef Name="NrDomu" />
+      <PropertyRef Name="KodPocztowyID" />
+      <PropertyRef Name="WlascicielID" />
+      <PropertyRef Name="DataWprowadzenia" />
+    </Key>
+    <Property Type="String" Name="Nazwa" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Imie" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwisko" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Ulica" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomu" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkania" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyID" Nullable="false" />
+    <Property Type="String" Name="NrDomuKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkaniaKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyKotaktID" />
+    <Property Type="String" Name="Nip" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Regon" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Logo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="String" Name="Email" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Www" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon2" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fax" MaxLength="11" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KodyPocztowe" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe2" FromRole="DanePrzedsiebiorstwa" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe1" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe3" FromRole="DanePrzedsiebiorstwa" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy2" FromRole="DanePrzedsiebiorstwa" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy3" FromRole="DanePrzedsiebiorstwa" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy4" FromRole="DanePrzedsiebiorstwa" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="DokumentyKupna">
+    <Key>
+      <PropertyRef Name="DokumentKupnaID" />
+    </Key>
+    <Property Type="Int32" Name="DokumentKupnaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DataWystawienia" Nullable="false" />
+    <Property Type="DateTime" Name="DataSprzedazy" Nullable="false" />
+    <Property Type="Int32" Name="DostawcaID" Nullable="false" />
+    <Property Type="Int32" Name="FormaPlatnosciID" Nullable="false" />
+    <Property Type="DateTime" Name="TerminPlatnosci" Nullable="false" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="String" Name="NrDokumentu" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dostawcy" Relationship="FakturyDBModel.FK_DokumentyKupna_Dostawcy" FromRole="DokumentyKupna" ToRole="Dostawcy" />
+    <NavigationProperty Name="FormyPlatnosci" Relationship="FakturyDBModel.FK_DokumentyKupna_FormyPlatnosci" FromRole="DokumentyKupna" ToRole="FormyPlatnosci" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy1" FromRole="DokumentyKupna" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy2" FromRole="DokumentyKupna" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="ProduktyFakturyKupna" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_DokumentyKupna" FromRole="DokumentyKupna" ToRole="ProduktyFakturyKupna" />
+    <NavigationProperty Name="RozliczeniaKupna" Relationship="FakturyDBModel.FK_RozliczeniaKupna_DokumentyKupna" FromRole="DokumentyKupna" ToRole="RozliczeniaKupna" />
+  </EntityType>
+  <EntityType Name="DokumentySprzedazy">
+    <Key>
+      <PropertyRef Name="DokumentSprzedazyID" />
+    </Key>
+    <Property Type="Int32" Name="DokumentSprzedazyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TypDokumentu" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDokumentu" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KlientID" Nullable="false" />
+    <Property Type="Int32" Name="MiejscowoscID" Nullable="false" />
+    <Property Type="Int32" Name="KrajID" Nullable="false" />
+    <Property Type="Int32" Name="BankID" Nullable="false" />
+    <Property Type="Int32" Name="FormaPlatnosciID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWystawienia" Nullable="false" />
+    <Property Type="DateTime" Name="DataSprzedazy" Nullable="false" />
+    <Property Type="DateTime" Name="TerminPlatnosci" Nullable="false" />
+    <Property Type="Decimal" Name="WartoscNetto" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="WartoscBrutto" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PozostaloDoZaplaty" Precision="19" Scale="4" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <NavigationProperty Name="Banki" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Banki" FromRole="DokumentySprzedazy" ToRole="Banki" />
+    <NavigationProperty Name="FormyPlatnosci" Relationship="FakturyDBModel.FK_DokumentySprzedazy_FormyPlatnosci" FromRole="DokumentySprzedazy" ToRole="FormyPlatnosci" />
+    <NavigationProperty Name="Klienci" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Klienci" FromRole="DokumentySprzedazy" ToRole="Klienci" />
+    <NavigationProperty Name="Kraje" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Kraje" FromRole="DokumentySprzedazy" ToRole="Kraje" />
+    <NavigationProperty Name="Miejscowosci" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Miejscowosci" FromRole="DokumentySprzedazy" ToRole="Miejscowosci" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy" FromRole="DokumentySprzedazy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy1" FromRole="DokumentySprzedazy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="ProduktyFakturySprzedazy" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_DokumentySprzedazy" FromRole="DokumentySprzedazy" ToRole="ProduktyFakturySprzedazy" />
+    <NavigationProperty Name="RozliczeniaSprzedazy" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_DokumentySprzedazy" FromRole="DokumentySprzedazy" ToRole="RozliczeniaSprzedazy" />
+  </EntityType>
+  <EntityType Name="Dostawcy">
+    <Key>
+      <PropertyRef Name="DostawcaID" />
+    </Key>
+    <Property Type="Int32" Name="DostawcaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Imie" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwisko" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwa" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Ulica" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomu" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkania" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyID" Nullable="false" />
+    <Property Type="String" Name="ImieKotakt" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NazwiskoKotakt" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UlicaKotakt" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomuKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkaniaKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyKotaktID" />
+    <Property Type="String" Name="Nip" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="String" Name="Email" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon2" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Bank" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrBanku" MaxLength="32" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DokumentyKupna" Relationship="FakturyDBModel.FK_DokumentyKupna_Dostawcy" FromRole="Dostawcy" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="KodyPocztowe" Relationship="FakturyDBModel.FK_Dostawcy_KodyPocztowe" FromRole="Dostawcy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe1" Relationship="FakturyDBModel.FK_Dostawcy_KodyPocztowe1" FromRole="Dostawcy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Dostawcy_Uzytkownicy" FromRole="Dostawcy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Dostawcy_Uzytkownicy1" FromRole="Dostawcy" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="FormyPlatnosci">
+    <Key>
+      <PropertyRef Name="FormaPlatnosciID" />
+    </Key>
+    <Property Type="Int32" Name="FormaPlatnosciID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <NavigationProperty Name="DokumentyKupna" Relationship="FakturyDBModel.FK_DokumentyKupna_FormyPlatnosci" FromRole="FormyPlatnosci" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_FormyPlatnosci" FromRole="FormyPlatnosci" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy" FromRole="FormyPlatnosci" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy1" FromRole="FormyPlatnosci" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy2" FromRole="FormyPlatnosci" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="JednostkiMiar">
+    <Key>
+      <PropertyRef Name="JednostkaMiarID" />
+    </Key>
+    <Property Type="Int32" Name="JednostkaMiarID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy" FromRole="JednostkiMiar" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy1" FromRole="JednostkiMiar" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy2" FromRole="JednostkiMiar" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="TowaryUslugi" Relationship="FakturyDBModel.FK_TowaryUslugi_JednostkiMiar" FromRole="JednostkiMiar" ToRole="TowaryUslugi" />
+  </EntityType>
+  <EntityType Name="Klienci">
+    <Key>
+      <PropertyRef Name="KlientID" />
+    </Key>
+    <Property Type="Int32" Name="KlientID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Imie" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwisko" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwa" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Ulica" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomu" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkania" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyID" Nullable="false" />
+    <Property Type="String" Name="ImieKotakt" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NazwiskoKotakt" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UlicaKotakt" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomuKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkaniaKotakt" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyKotaktID" />
+    <Property Type="String" Name="Nip" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pesel" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="String" Name="Email" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefon2" MaxLength="16" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Klienci" FromRole="Klienci" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="KodyPocztowe" Relationship="FakturyDBModel.FK_Klienci_KodyPocztowe" FromRole="Klienci" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe1" Relationship="FakturyDBModel.FK_Klienci_KodyPocztowe1" FromRole="Klienci" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Klienci_Uzytkownicy" FromRole="Klienci" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Klienci_Uzytkownicy1" FromRole="Klienci" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="KodyPocztowe">
+    <Key>
+      <PropertyRef Name="KodPocztowyID" />
+    </Key>
+    <Property Type="Int32" Name="KodPocztowyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Kod" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MiejscowoscID" Nullable="false" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <NavigationProperty Name="DanePrzedsiebiorstwa" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe2" FromRole="KodyPocztowe" ToRole="DanePrzedsiebiorstwa" />
+    <NavigationProperty Name="DanePrzedsiebiorstwa1" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_KodyPocztowe3" FromRole="KodyPocztowe" ToRole="DanePrzedsiebiorstwa" />
+    <NavigationProperty Name="Dostawcy" Relationship="FakturyDBModel.FK_Dostawcy_KodyPocztowe" FromRole="KodyPocztowe" ToRole="Dostawcy" />
+    <NavigationProperty Name="Dostawcy1" Relationship="FakturyDBModel.FK_Dostawcy_KodyPocztowe1" FromRole="KodyPocztowe" ToRole="Dostawcy" />
+    <NavigationProperty Name="Klienci" Relationship="FakturyDBModel.FK_Klienci_KodyPocztowe" FromRole="KodyPocztowe" ToRole="Klienci" />
+    <NavigationProperty Name="Klienci1" Relationship="FakturyDBModel.FK_Klienci_KodyPocztowe1" FromRole="KodyPocztowe" ToRole="Klienci" />
+    <NavigationProperty Name="Miejscowosci" Relationship="FakturyDBModel.FK_KodyPocztowe_Miejscowosci" FromRole="KodyPocztowe" ToRole="Miejscowosci" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikBlokujacy" FromRole="KodyPocztowe" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikModyfikujacy" FromRole="KodyPocztowe" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikWlasciciel" FromRole="KodyPocztowe" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy3" Relationship="FakturyDBModel.FK_Uzytkownicy_KodyPocztowe" FromRole="KodyPocztowe" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="Kraje">
+    <Key>
+      <PropertyRef Name="KrajID" />
+    </Key>
+    <Property Type="Int32" Name="KrajID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="String" Name="Waluta" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WalutaSkrot" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Kraje" FromRole="Kraje" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy" FromRole="Kraje" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy1" FromRole="Kraje" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy2" FromRole="Kraje" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Miejscowosci" Relationship="FakturyDBModel.FK_Miejscowosci_Kraje" FromRole="Kraje" ToRole="Miejscowosci" />
+  </EntityType>
+  <EntityType Name="Miejscowosci">
+    <Key>
+      <PropertyRef Name="MiejscowoscID" />
+    </Key>
+    <Property Type="Int32" Name="MiejscowoscID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="KrajID" Nullable="false" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Miejscowosci" FromRole="Miejscowosci" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="KodyPocztowe" Relationship="FakturyDBModel.FK_KodyPocztowe_Miejscowosci" FromRole="Miejscowosci" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="Kraje" Relationship="FakturyDBModel.FK_Miejscowosci_Kraje" FromRole="Miejscowosci" ToRole="Kraje" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy" FromRole="Miejscowosci" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy1" FromRole="Miejscowosci" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy2" FromRole="Miejscowosci" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="ProduktyFakturyKupna">
+    <Key>
+      <PropertyRef Name="ProduktFakturyKupnaID" />
+    </Key>
+    <Property Type="Int32" Name="ProduktFakturyKupnaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DokumentKupnaID" Nullable="false" />
+    <Property Type="Int32" Name="TowarID" Nullable="false" />
+    <Property Type="Decimal" Name="Ilosc" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <NavigationProperty Name="DokumentyKupna" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_DokumentyKupna" FromRole="ProduktyFakturyKupna" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="TowaryUslugi" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_TowaryUslugi" FromRole="ProduktyFakturyKupna" ToRole="TowaryUslugi" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy" FromRole="ProduktyFakturyKupna" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy1" FromRole="ProduktyFakturyKupna" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="ProduktyFakturySprzedazy">
+    <Key>
+      <PropertyRef Name="ProduktFakturySprzedazyID" />
+    </Key>
+    <Property Type="Int32" Name="ProduktFakturySprzedazyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DokumentSprzedazyID" Nullable="false" />
+    <Property Type="Int32" Name="TowarID" Nullable="false" />
+    <Property Type="Decimal" Name="Ilosc" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Decimal" Name="WartoscNetto" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="WartoscBrutto" Precision="19" Scale="4" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_DokumentySprzedazy" FromRole="ProduktyFakturySprzedazy" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="TowaryUslugi" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_TowaryUslugi" FromRole="ProduktyFakturySprzedazy" ToRole="TowaryUslugi" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy" FromRole="ProduktyFakturySprzedazy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy1" FromRole="ProduktyFakturySprzedazy" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RolaID" />
+    </Key>
+    <Property Type="Int32" Name="RolaID" Nullable="false" />
+    <Property Type="String" Name="Nazwa" MaxLength="16" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_Uzytkownicy_Role" FromRole="Role" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="RozliczeniaKupna">
+    <Key>
+      <PropertyRef Name="RozliczenieKupnaID" />
+    </Key>
+    <Property Type="Int32" Name="RozliczenieKupnaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DokumentKupnaID" Nullable="false" />
+    <Property Type="Decimal" Name="Kwota" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <NavigationProperty Name="DokumentyKupna" Relationship="FakturyDBModel.FK_RozliczeniaKupna_DokumentyKupna" FromRole="RozliczeniaKupna" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy" FromRole="RozliczeniaKupna" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy1" FromRole="RozliczeniaKupna" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="RozliczeniaSprzedazy">
+    <Key>
+      <PropertyRef Name="RozliczenieSprzedazyID" />
+    </Key>
+    <Property Type="Int32" Name="RozliczenieSprzedazyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DokumentSprzedazyID" Nullable="false" />
+    <Property Type="Decimal" Name="Kwota" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="DataWplaty" Nullable="false" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_DokumentySprzedazy" FromRole="RozliczeniaSprzedazy" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy" FromRole="RozliczeniaSprzedazy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy1" FromRole="RozliczeniaSprzedazy" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy2" FromRole="RozliczeniaSprzedazy" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="StawkiVat">
+    <Key>
+      <PropertyRef Name="StawkaVatID" />
+    </Key>
+    <Property Type="Int32" Name="StawkaVatID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Wartosc" Nullable="false" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy" FromRole="StawkiVat" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy1" FromRole="StawkiVat" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy2" FromRole="StawkiVat" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="TowaryUslugi" Relationship="FakturyDBModel.FK_TowaryUslugi_StawkiVat" FromRole="StawkiVat" ToRole="TowaryUslugi" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TowaryUslugi">
+    <Key>
+      <PropertyRef Name="TowarID" />
+    </Key>
+    <Property Type="Int32" Name="TowarID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Rodzaj" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwa" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="CenaNetto" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="CenaBrutto" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Marza" Precision="8" Scale="3" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" Nullable="false" />
+    <Property Type="DateTime" Name="DataWprowadzenia" Nullable="false" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="Int32" Name="JednostkaMiarID" Nullable="false" />
+    <Property Type="Int32" Name="StawkaVatID" Nullable="false" />
+    <NavigationProperty Name="JednostkiMiar" Relationship="FakturyDBModel.FK_TowaryUslugi_JednostkiMiar" FromRole="TowaryUslugi" ToRole="JednostkiMiar" />
+    <NavigationProperty Name="ProduktyFakturyKupna" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_TowaryUslugi" FromRole="TowaryUslugi" ToRole="ProduktyFakturyKupna" />
+    <NavigationProperty Name="ProduktyFakturySprzedazy" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_TowaryUslugi" FromRole="TowaryUslugi" ToRole="ProduktyFakturySprzedazy" />
+    <NavigationProperty Name="StawkiVat" Relationship="FakturyDBModel.FK_TowaryUslugi_StawkiVat" FromRole="TowaryUslugi" ToRole="StawkiVat" />
+    <NavigationProperty Name="Uzytkownicy" Relationship="FakturyDBModel.FK_TowaryUslugi_UzytkownikBlokujacy" FromRole="TowaryUslugi" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_TowaryUslugi_UzytkownikWlasciciel" FromRole="TowaryUslugi" ToRole="Uzytkownicy" />
+  </EntityType>
+  <EntityType Name="Uzytkownicy">
+    <Key>
+      <PropertyRef Name="UzytkownikID" />
+    </Key>
+    <Property Type="Int32" Name="UzytkownikID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Imie" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nazwisko" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Ulica" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrDomu" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NrMieszkania" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KodPocztowyID" />
+    <Property Type="String" Name="Nip" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pesel" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Uwagi" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WlascicielID" />
+    <Property Type="DateTime" Name="DataWprowadzenia" />
+    <Property Type="Int32" Name="ModyfikujacyID" />
+    <Property Type="DateTime" Name="DataModyfikacji" />
+    <Property Type="String" Name="Email" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DataZablokowania" />
+    <Property Type="String" Name="Haslo" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HasloSzum" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RolaID" />
+    <Property Type="Int32" Name="BlokujacyID" />
+    <Property Type="String" Name="Login" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Banki" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Banki" />
+    <NavigationProperty Name="Banki1" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Banki" />
+    <NavigationProperty Name="Banki2" Relationship="FakturyDBModel.FK_Banki_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="Banki" />
+    <NavigationProperty Name="DanePrzedsiebiorstwa" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="DanePrzedsiebiorstwa" />
+    <NavigationProperty Name="DanePrzedsiebiorstwa1" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy3" FromRole="Uzytkownicy" ToRole="DanePrzedsiebiorstwa" />
+    <NavigationProperty Name="DanePrzedsiebiorstwa2" Relationship="FakturyDBModel.FK_DanePrzedsiebiorstwa_Uzytkownicy4" FromRole="Uzytkownicy" ToRole="DanePrzedsiebiorstwa" />
+    <NavigationProperty Name="DokumentyKupna" Relationship="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="DokumentyKupna1" Relationship="FakturyDBModel.FK_DokumentyKupna_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="DokumentyKupna" />
+    <NavigationProperty Name="DokumentySprzedazy" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy" FromRole="Uzytkownicy" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="DokumentySprzedazy1" Relationship="FakturyDBModel.FK_DokumentySprzedazy_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="DokumentySprzedazy" />
+    <NavigationProperty Name="Dostawcy" Relationship="FakturyDBModel.FK_Dostawcy_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Dostawcy" />
+    <NavigationProperty Name="Dostawcy1" Relationship="FakturyDBModel.FK_Dostawcy_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Dostawcy" />
+    <NavigationProperty Name="FormyPlatnosci" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy" FromRole="Uzytkownicy" ToRole="FormyPlatnosci" />
+    <NavigationProperty Name="FormyPlatnosci1" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="FormyPlatnosci" />
+    <NavigationProperty Name="FormyPlatnosci2" Relationship="FakturyDBModel.FK_FormyPlatnosci_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="FormyPlatnosci" />
+    <NavigationProperty Name="JednostkiMiar" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy" FromRole="Uzytkownicy" ToRole="JednostkiMiar" />
+    <NavigationProperty Name="JednostkiMiar1" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="JednostkiMiar" />
+    <NavigationProperty Name="JednostkiMiar2" Relationship="FakturyDBModel.FK_JednostkiMiar_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="JednostkiMiar" />
+    <NavigationProperty Name="Klienci" Relationship="FakturyDBModel.FK_Klienci_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Klienci" />
+    <NavigationProperty Name="Klienci1" Relationship="FakturyDBModel.FK_Klienci_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Klienci" />
+    <NavigationProperty Name="KodyPocztowe" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikBlokujacy" FromRole="Uzytkownicy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe1" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikModyfikujacy" FromRole="Uzytkownicy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe2" Relationship="FakturyDBModel.FK_KodyPocztowe_UzytkownikWlasciciel" FromRole="Uzytkownicy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="KodyPocztowe3" Relationship="FakturyDBModel.FK_Uzytkownicy_KodyPocztowe" FromRole="Uzytkownicy" ToRole="KodyPocztowe" />
+    <NavigationProperty Name="Kraje" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Kraje" />
+    <NavigationProperty Name="Kraje1" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Kraje" />
+    <NavigationProperty Name="Kraje2" Relationship="FakturyDBModel.FK_Kraje_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="Kraje" />
+    <NavigationProperty Name="Miejscowosci" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Miejscowosci" />
+    <NavigationProperty Name="Miejscowosci1" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Miejscowosci" />
+    <NavigationProperty Name="Miejscowosci2" Relationship="FakturyDBModel.FK_Miejscowosci_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="Miejscowosci" />
+    <NavigationProperty Name="ProduktyFakturyKupna" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy" FromRole="Uzytkownicy" ToRole="ProduktyFakturyKupna" />
+    <NavigationProperty Name="ProduktyFakturyKupna1" Relationship="FakturyDBModel.FK_ProduktyFakturyKupna_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="ProduktyFakturyKupna" />
+    <NavigationProperty Name="ProduktyFakturySprzedazy" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy" FromRole="Uzytkownicy" ToRole="ProduktyFakturySprzedazy" />
+    <NavigationProperty Name="ProduktyFakturySprzedazy1" Relationship="FakturyDBModel.FK_ProduktyFakturySprzedazy_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="ProduktyFakturySprzedazy" />
+    <NavigationProperty Name="Role" Relationship="FakturyDBModel.FK_Uzytkownicy_Role" FromRole="Uzytkownicy" ToRole="Role" />
+    <NavigationProperty Name="RozliczeniaKupna" Relationship="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy" FromRole="Uzytkownicy" ToRole="RozliczeniaKupna" />
+    <NavigationProperty Name="RozliczeniaKupna1" Relationship="FakturyDBModel.FK_RozliczeniaKupna_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="RozliczeniaKupna" />
+    <NavigationProperty Name="RozliczeniaSprzedazy" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy" FromRole="Uzytkownicy" ToRole="RozliczeniaSprzedazy" />
+    <NavigationProperty Name="RozliczeniaSprzedazy1" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="RozliczeniaSprzedazy" />
+    <NavigationProperty Name="RozliczeniaSprzedazy2" Relationship="FakturyDBModel.FK_RozliczeniaSprzedazy_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="RozliczeniaSprzedazy" />
+    <NavigationProperty Name="StawkiVat" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy" FromRole="Uzytkownicy" ToRole="StawkiVat" />
+    <NavigationProperty Name="StawkiVat1" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="StawkiVat" />
+    <NavigationProperty Name="StawkiVat2" Relationship="FakturyDBModel.FK_StawkiVat_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="StawkiVat" />
+    <NavigationProperty Name="TowaryUslugi" Relationship="FakturyDBModel.FK_TowaryUslugi_UzytkownikBlokujacy" FromRole="Uzytkownicy" ToRole="TowaryUslugi" />
+    <NavigationProperty Name="TowaryUslugi1" Relationship="FakturyDBModel.FK_TowaryUslugi_UzytkownikWlasciciel" FromRole="Uzytkownicy" ToRole="TowaryUslugi" />
+    <NavigationProperty Name="Uzytkownicy1" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy" FromRole="Uzytkownicy" ToRole="Uzytkownicy1" />
+    <NavigationProperty Name="Uzytkownicy2" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy" FromRole="Uzytkownicy1" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy11" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy1" FromRole="Uzytkownicy" ToRole="Uzytkownicy1" />
+    <NavigationProperty Name="Uzytkownicy3" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy1" FromRole="Uzytkownicy1" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy12" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy2" FromRole="Uzytkownicy" ToRole="Uzytkownicy1" />
+    <NavigationProperty Name="Uzytkownicy4" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy2" FromRole="Uzytkownicy1" ToRole="Uzytkownicy" />
+    <NavigationProperty Name="Uzytkownicy13" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy4" FromRole="Uzytkownicy" ToRole="Uzytkownicy1" />
+    <NavigationProperty Name="Uzytkownicy5" Relationship="FakturyDBModel.FK_Uzytkownicy_Uzytkownicy4" FromRole="Uzytkownicy1" ToRole="Uzytkownicy" />
+  </EntityType>
+  <Association Name="FK_Banki_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.Banki" Role="Banki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Banki">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Banki_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Banki" Role="Banki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Banki">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Banki_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Banki" Role="Banki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Banki">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Banki">
+    <End Type="FakturyDBModel.Banki" Role="Banki" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banki">
+        <PropertyRef Name="BankID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="BankID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanePrzedsiebiorstwa_KodyPocztowe2">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="1" />
+    <End Type="FakturyDBModel.DanePrzedsiebiorstwa" Role="DanePrzedsiebiorstwa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="DanePrzedsiebiorstwa">
+        <PropertyRef Name="KodPocztowyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanePrzedsiebiorstwa_KodyPocztowe3">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.DanePrzedsiebiorstwa" Role="DanePrzedsiebiorstwa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="DanePrzedsiebiorstwa">
+        <PropertyRef Name="KodPocztowyKotaktID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanePrzedsiebiorstwa_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.DanePrzedsiebiorstwa" Role="DanePrzedsiebiorstwa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DanePrzedsiebiorstwa">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanePrzedsiebiorstwa_Uzytkownicy3">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.DanePrzedsiebiorstwa" Role="DanePrzedsiebiorstwa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DanePrzedsiebiorstwa">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanePrzedsiebiorstwa_Uzytkownicy4">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.DanePrzedsiebiorstwa" Role="DanePrzedsiebiorstwa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DanePrzedsiebiorstwa">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentyKupna_Dostawcy">
+    <End Type="FakturyDBModel.Dostawcy" Role="Dostawcy" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dostawcy">
+        <PropertyRef Name="DostawcaID" />
+      </Principal>
+      <Dependent Role="DokumentyKupna">
+        <PropertyRef Name="DostawcaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentyKupna_FormyPlatnosci">
+    <End Type="FakturyDBModel.FormyPlatnosci" Role="FormyPlatnosci" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormyPlatnosci">
+        <PropertyRef Name="FormaPlatnosciID" />
+      </Principal>
+      <Dependent Role="DokumentyKupna">
+        <PropertyRef Name="FormaPlatnosciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentyKupna_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DokumentyKupna">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentyKupna_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DokumentyKupna">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturyKupna_DokumentyKupna">
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturyKupna" Role="ProduktyFakturyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DokumentyKupna">
+        <PropertyRef Name="DokumentKupnaID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturyKupna">
+        <PropertyRef Name="DokumentKupnaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaKupna_DokumentyKupna">
+    <End Type="FakturyDBModel.DokumentyKupna" Role="DokumentyKupna" Multiplicity="1" />
+    <End Type="FakturyDBModel.RozliczeniaKupna" Role="RozliczeniaKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DokumentyKupna">
+        <PropertyRef Name="DokumentKupnaID" />
+      </Principal>
+      <Dependent Role="RozliczeniaKupna">
+        <PropertyRef Name="DokumentKupnaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_FormyPlatnosci">
+    <End Type="FakturyDBModel.FormyPlatnosci" Role="FormyPlatnosci" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormyPlatnosci">
+        <PropertyRef Name="FormaPlatnosciID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="FormaPlatnosciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Klienci">
+    <End Type="FakturyDBModel.Klienci" Role="Klienci" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klienci">
+        <PropertyRef Name="KlientID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="KlientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Kraje">
+    <End Type="FakturyDBModel.Kraje" Role="Kraje" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kraje">
+        <PropertyRef Name="KrajID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="KrajID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Miejscowosci">
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Miejscowosci">
+        <PropertyRef Name="MiejscowoscID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="MiejscowoscID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DokumentySprzedazy_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="DokumentySprzedazy">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturySprzedazy_DokumentySprzedazy">
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturySprzedazy" Role="ProduktyFakturySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DokumentySprzedazy">
+        <PropertyRef Name="DokumentSprzedazyID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturySprzedazy">
+        <PropertyRef Name="DokumentSprzedazyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaSprzedazy_DokumentySprzedazy">
+    <End Type="FakturyDBModel.DokumentySprzedazy" Role="DokumentySprzedazy" Multiplicity="1" />
+    <End Type="FakturyDBModel.RozliczeniaSprzedazy" Role="RozliczeniaSprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DokumentySprzedazy">
+        <PropertyRef Name="DokumentSprzedazyID" />
+      </Principal>
+      <Dependent Role="RozliczeniaSprzedazy">
+        <PropertyRef Name="DokumentSprzedazyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dostawcy_KodyPocztowe">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="1" />
+    <End Type="FakturyDBModel.Dostawcy" Role="Dostawcy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="Dostawcy">
+        <PropertyRef Name="KodPocztowyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dostawcy_KodyPocztowe1">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Dostawcy" Role="Dostawcy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="Dostawcy">
+        <PropertyRef Name="KodPocztowyKotaktID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dostawcy_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.Dostawcy" Role="Dostawcy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Dostawcy">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dostawcy_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Dostawcy" Role="Dostawcy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Dostawcy">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormyPlatnosci_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.FormyPlatnosci" Role="FormyPlatnosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="FormyPlatnosci">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormyPlatnosci_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.FormyPlatnosci" Role="FormyPlatnosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="FormyPlatnosci">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormyPlatnosci_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.FormyPlatnosci" Role="FormyPlatnosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="FormyPlatnosci">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JednostkiMiar_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.JednostkiMiar" Role="JednostkiMiar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="JednostkiMiar">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JednostkiMiar_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.JednostkiMiar" Role="JednostkiMiar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="JednostkiMiar">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JednostkiMiar_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.JednostkiMiar" Role="JednostkiMiar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="JednostkiMiar">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowaryUslugi_JednostkiMiar">
+    <End Type="FakturyDBModel.JednostkiMiar" Role="JednostkiMiar" Multiplicity="1" />
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JednostkiMiar">
+        <PropertyRef Name="JednostkaMiarID" />
+      </Principal>
+      <Dependent Role="TowaryUslugi">
+        <PropertyRef Name="JednostkaMiarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klienci_KodyPocztowe">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="1" />
+    <End Type="FakturyDBModel.Klienci" Role="Klienci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="Klienci">
+        <PropertyRef Name="KodPocztowyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klienci_KodyPocztowe1">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Klienci" Role="Klienci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="Klienci">
+        <PropertyRef Name="KodPocztowyKotaktID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klienci_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.Klienci" Role="Klienci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Klienci">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Klienci_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Klienci" Role="Klienci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Klienci">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KodyPocztowe_Miejscowosci">
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="1" />
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Miejscowosci">
+        <PropertyRef Name="MiejscowoscID" />
+      </Principal>
+      <Dependent Role="KodyPocztowe">
+        <PropertyRef Name="MiejscowoscID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KodyPocztowe_UzytkownikBlokujacy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="KodyPocztowe">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KodyPocztowe_UzytkownikModyfikujacy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="KodyPocztowe">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KodyPocztowe_UzytkownikWlasciciel">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="KodyPocztowe">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_KodyPocztowe">
+    <End Type="FakturyDBModel.KodyPocztowe" Role="KodyPocztowe" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KodyPocztowe">
+        <PropertyRef Name="KodPocztowyID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy">
+        <PropertyRef Name="KodPocztowyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kraje_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.Kraje" Role="Kraje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Kraje">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kraje_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Kraje" Role="Kraje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Kraje">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kraje_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Kraje" Role="Kraje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Kraje">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Miejscowosci_Kraje">
+    <End Type="FakturyDBModel.Kraje" Role="Kraje" Multiplicity="1" />
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kraje">
+        <PropertyRef Name="KrajID" />
+      </Principal>
+      <Dependent Role="Miejscowosci">
+        <PropertyRef Name="KrajID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Miejscowosci_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Miejscowosci">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Miejscowosci_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Miejscowosci">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Miejscowosci_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Miejscowosci" Role="Miejscowosci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Miejscowosci">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturyKupna_TowaryUslugi">
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturyKupna" Role="ProduktyFakturyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TowaryUslugi">
+        <PropertyRef Name="TowarID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturyKupna">
+        <PropertyRef Name="TowarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturyKupna_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturyKupna" Role="ProduktyFakturyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturyKupna">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturyKupna_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.ProduktyFakturyKupna" Role="ProduktyFakturyKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturyKupna">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturySprzedazy_TowaryUslugi">
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturySprzedazy" Role="ProduktyFakturySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TowaryUslugi">
+        <PropertyRef Name="TowarID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturySprzedazy">
+        <PropertyRef Name="TowarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturySprzedazy_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.ProduktyFakturySprzedazy" Role="ProduktyFakturySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturySprzedazy">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProduktyFakturySprzedazy_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.ProduktyFakturySprzedazy" Role="ProduktyFakturySprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="ProduktyFakturySprzedazy">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_Role">
+    <End Type="FakturyDBModel.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RolaID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy">
+        <PropertyRef Name="RolaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaKupna_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.RozliczeniaKupna" Role="RozliczeniaKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="RozliczeniaKupna">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaKupna_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.RozliczeniaKupna" Role="RozliczeniaKupna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="RozliczeniaKupna">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaSprzedazy_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.RozliczeniaSprzedazy" Role="RozliczeniaSprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="RozliczeniaSprzedazy">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaSprzedazy_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.RozliczeniaSprzedazy" Role="RozliczeniaSprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="RozliczeniaSprzedazy">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RozliczeniaSprzedazy_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.RozliczeniaSprzedazy" Role="RozliczeniaSprzedazy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="RozliczeniaSprzedazy">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StawkiVat_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.StawkiVat" Role="StawkiVat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="StawkiVat">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StawkiVat_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.StawkiVat" Role="StawkiVat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="StawkiVat">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StawkiVat_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.StawkiVat" Role="StawkiVat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="StawkiVat">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowaryUslugi_StawkiVat">
+    <End Type="FakturyDBModel.StawkiVat" Role="StawkiVat" Multiplicity="1" />
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StawkiVat">
+        <PropertyRef Name="StawkaVatID" />
+      </Principal>
+      <Dependent Role="TowaryUslugi">
+        <PropertyRef Name="StawkaVatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowaryUslugi_UzytkownikBlokujacy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="TowaryUslugi">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowaryUslugi_UzytkownikWlasciciel">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="1" />
+    <End Type="FakturyDBModel.TowaryUslugi" Role="TowaryUslugi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="TowaryUslugi">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_Uzytkownicy">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy1">
+        <PropertyRef Name="WlascicielID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_Uzytkownicy1">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy1">
+        <PropertyRef Name="ModyfikujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_Uzytkownicy2">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy1">
+        <PropertyRef Name="RolaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzytkownicy_Uzytkownicy4">
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy" Multiplicity="0..1" />
+    <End Type="FakturyDBModel.Uzytkownicy" Role="Uzytkownicy1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzytkownicy">
+        <PropertyRef Name="UzytkownikID" />
+      </Principal>
+      <Dependent Role="Uzytkownicy1">
+        <PropertyRef Name="BlokujacyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

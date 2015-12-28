@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FakturyDBModelStoreContainer" CdmEntityContainer="FakturyDBEntitiess">
+    <EntitySetMapping Name="Banki">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Banki)">
+        <MappingFragment StoreEntitySet="Banki">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="NrBanku" ColumnName="NrBanku" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanePrzedsiebiorstwa">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.DanePrzedsiebiorstwa)">
+        <MappingFragment StoreEntitySet="DanePrzedsiebiorstwa">
+          <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+          <ScalarProperty Name="KodPocztowyID" ColumnName="KodPocztowyID" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="NrMieszkania" ColumnName="NrMieszkania" />
+          <ScalarProperty Name="NrDomuKotakt" ColumnName="NrDomuKotakt" />
+          <ScalarProperty Name="NrMieszkaniaKotakt" ColumnName="NrMieszkaniaKotakt" />
+          <ScalarProperty Name="KodPocztowyKotaktID" ColumnName="KodPocztowyKotaktID" />
+          <ScalarProperty Name="Nip" ColumnName="Nip" />
+          <ScalarProperty Name="Regon" ColumnName="Regon" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Www" ColumnName="Www" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DokumentyKupna">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.DokumentyKupna)">
+        <MappingFragment StoreEntitySet="DokumentyKupna">
+          <ScalarProperty Name="DokumentKupnaID" ColumnName="DokumentKupnaID" />
+          <ScalarProperty Name="DataWystawienia" ColumnName="DataWystawienia" />
+          <ScalarProperty Name="DataSprzedazy" ColumnName="DataSprzedazy" />
+          <ScalarProperty Name="DostawcaID" ColumnName="DostawcaID" />
+          <ScalarProperty Name="FormaPlatnosciID" ColumnName="FormaPlatnosciID" />
+          <ScalarProperty Name="TerminPlatnosci" ColumnName="TerminPlatnosci" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="NrDokumentu" ColumnName="NrDokumentu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DokumentySprzedazy">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.DokumentySprzedazy)">
+        <MappingFragment StoreEntitySet="DokumentySprzedazy">
+          <ScalarProperty Name="DokumentSprzedazyID" ColumnName="DokumentSprzedazyID" />
+          <ScalarProperty Name="TypDokumentu" ColumnName="TypDokumentu" />
+          <ScalarProperty Name="NrDokumentu" ColumnName="NrDokumentu" />
+          <ScalarProperty Name="KlientID" ColumnName="KlientID" />
+          <ScalarProperty Name="MiejscowoscID" ColumnName="MiejscowoscID" />
+          <ScalarProperty Name="KrajID" ColumnName="KrajID" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="FormaPlatnosciID" ColumnName="FormaPlatnosciID" />
+          <ScalarProperty Name="DataWystawienia" ColumnName="DataWystawienia" />
+          <ScalarProperty Name="DataSprzedazy" ColumnName="DataSprzedazy" />
+          <ScalarProperty Name="TerminPlatnosci" ColumnName="TerminPlatnosci" />
+          <ScalarProperty Name="WartoscNetto" ColumnName="WartoscNetto" />
+          <ScalarProperty Name="WartoscBrutto" ColumnName="WartoscBrutto" />
+          <ScalarProperty Name="PozostaloDoZaplaty" ColumnName="PozostaloDoZaplaty" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dostawcy">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Dostawcy)">
+        <MappingFragment StoreEntitySet="Dostawcy">
+          <ScalarProperty Name="DostawcaID" ColumnName="DostawcaID" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+          <ScalarProperty Name="NrMieszkania" ColumnName="NrMieszkania" />
+          <ScalarProperty Name="KodPocztowyID" ColumnName="KodPocztowyID" />
+          <ScalarProperty Name="ImieKotakt" ColumnName="ImieKotakt" />
+          <ScalarProperty Name="NazwiskoKotakt" ColumnName="NazwiskoKotakt" />
+          <ScalarProperty Name="UlicaKotakt" ColumnName="UlicaKotakt" />
+          <ScalarProperty Name="NrDomuKotakt" ColumnName="NrDomuKotakt" />
+          <ScalarProperty Name="NrMieszkaniaKotakt" ColumnName="NrMieszkaniaKotakt" />
+          <ScalarProperty Name="KodPocztowyKotaktID" ColumnName="KodPocztowyKotaktID" />
+          <ScalarProperty Name="Nip" ColumnName="Nip" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="NrBanku" ColumnName="NrBanku" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormyPlatnosci">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.FormyPlatnosci)">
+        <MappingFragment StoreEntitySet="FormyPlatnosci">
+          <ScalarProperty Name="FormaPlatnosciID" ColumnName="FormaPlatnosciID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JednostkiMiar">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.JednostkiMiar)">
+        <MappingFragment StoreEntitySet="JednostkiMiar">
+          <ScalarProperty Name="JednostkaMiarID" ColumnName="JednostkaMiarID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Klienci">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Klienci)">
+        <MappingFragment StoreEntitySet="Klienci">
+          <ScalarProperty Name="KlientID" ColumnName="KlientID" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+          <ScalarProperty Name="NrMieszkania" ColumnName="NrMieszkania" />
+          <ScalarProperty Name="KodPocztowyID" ColumnName="KodPocztowyID" />
+          <ScalarProperty Name="ImieKotakt" ColumnName="ImieKotakt" />
+          <ScalarProperty Name="NazwiskoKotakt" ColumnName="NazwiskoKotakt" />
+          <ScalarProperty Name="UlicaKotakt" ColumnName="UlicaKotakt" />
+          <ScalarProperty Name="NrDomuKotakt" ColumnName="NrDomuKotakt" />
+          <ScalarProperty Name="NrMieszkaniaKotakt" ColumnName="NrMieszkaniaKotakt" />
+          <ScalarProperty Name="KodPocztowyKotaktID" ColumnName="KodPocztowyKotaktID" />
+          <ScalarProperty Name="Nip" ColumnName="Nip" />
+          <ScalarProperty Name="Pesel" ColumnName="Pesel" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KodyPocztowe">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.KodyPocztowe)">
+        <MappingFragment StoreEntitySet="KodyPocztowe">
+          <ScalarProperty Name="KodPocztowyID" ColumnName="KodPocztowyID" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MiejscowoscID" ColumnName="MiejscowoscID" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kraje">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Kraje)">
+        <MappingFragment StoreEntitySet="Kraje">
+          <ScalarProperty Name="KrajID" ColumnName="KrajID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="Waluta" ColumnName="Waluta" />
+          <ScalarProperty Name="WalutaSkrot" ColumnName="WalutaSkrot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Miejscowosci">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Miejscowosci)">
+        <MappingFragment StoreEntitySet="Miejscowosci">
+          <ScalarProperty Name="MiejscowoscID" ColumnName="MiejscowoscID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="KrajID" ColumnName="KrajID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProduktyFakturyKupna">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.ProduktyFakturyKupna)">
+        <MappingFragment StoreEntitySet="ProduktyFakturyKupna">
+          <ScalarProperty Name="ProduktFakturyKupnaID" ColumnName="ProduktFakturyKupnaID" />
+          <ScalarProperty Name="DokumentKupnaID" ColumnName="DokumentKupnaID" />
+          <ScalarProperty Name="TowarID" ColumnName="TowarID" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProduktyFakturySprzedazy">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.ProduktyFakturySprzedazy)">
+        <MappingFragment StoreEntitySet="ProduktyFakturySprzedazy">
+          <ScalarProperty Name="ProduktFakturySprzedazyID" ColumnName="ProduktFakturySprzedazyID" />
+          <ScalarProperty Name="DokumentSprzedazyID" ColumnName="DokumentSprzedazyID" />
+          <ScalarProperty Name="TowarID" ColumnName="TowarID" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="WartoscNetto" ColumnName="WartoscNetto" />
+          <ScalarProperty Name="WartoscBrutto" ColumnName="WartoscBrutto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Role)">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="RolaID" ColumnName="RolaID" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RozliczeniaKupna">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.RozliczeniaKupna)">
+        <MappingFragment StoreEntitySet="RozliczeniaKupna">
+          <ScalarProperty Name="RozliczenieKupnaID" ColumnName="RozliczenieKupnaID" />
+          <ScalarProperty Name="DokumentKupnaID" ColumnName="DokumentKupnaID" />
+          <ScalarProperty Name="Kwota" ColumnName="Kwota" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RozliczeniaSprzedazy">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.RozliczeniaSprzedazy)">
+        <MappingFragment StoreEntitySet="RozliczeniaSprzedazy">
+          <ScalarProperty Name="RozliczenieSprzedazyID" ColumnName="RozliczenieSprzedazyID" />
+          <ScalarProperty Name="DokumentSprzedazyID" ColumnName="DokumentSprzedazyID" />
+          <ScalarProperty Name="Kwota" ColumnName="Kwota" />
+          <ScalarProperty Name="DataWplaty" ColumnName="DataWplaty" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StawkiVat">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.StawkiVat)">
+        <MappingFragment StoreEntitySet="StawkiVat">
+          <ScalarProperty Name="StawkaVatID" ColumnName="StawkaVatID" />
+          <ScalarProperty Name="Wartosc" ColumnName="Wartosc" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TowaryUslugi">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.TowaryUslugi)">
+        <MappingFragment StoreEntitySet="TowaryUslugi">
+          <ScalarProperty Name="TowarID" ColumnName="TowarID" />
+          <ScalarProperty Name="Rodzaj" ColumnName="Rodzaj" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="CenaNetto" ColumnName="CenaNetto" />
+          <ScalarProperty Name="CenaBrutto" ColumnName="CenaBrutto" />
+          <ScalarProperty Name="Marza" ColumnName="Marza" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="JednostkaMiarID" ColumnName="JednostkaMiarID" />
+          <ScalarProperty Name="StawkaVatID" ColumnName="StawkaVatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uzytkownicy">
+      <EntityTypeMapping TypeName="IsTypeOf(FakturyDBModel.Uzytkownicy)">
+        <MappingFragment StoreEntitySet="Uzytkownicy">
+          <ScalarProperty Name="UzytkownikID" ColumnName="UzytkownikID" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+          <ScalarProperty Name="NrMieszkania" ColumnName="NrMieszkania" />
+          <ScalarProperty Name="KodPocztowyID" ColumnName="KodPocztowyID" />
+          <ScalarProperty Name="Nip" ColumnName="Nip" />
+          <ScalarProperty Name="Pesel" ColumnName="Pesel" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="WlascicielID" ColumnName="WlascicielID" />
+          <ScalarProperty Name="DataWprowadzenia" ColumnName="DataWprowadzenia" />
+          <ScalarProperty Name="ModyfikujacyID" ColumnName="ModyfikujacyID" />
+          <ScalarProperty Name="DataModyfikacji" ColumnName="DataModyfikacji" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DataZablokowania" ColumnName="DataZablokowania" />
+          <ScalarProperty Name="Haslo" ColumnName="Haslo" />
+          <ScalarProperty Name="HasloSzum" ColumnName="HasloSzum" />
+          <ScalarProperty Name="RolaID" ColumnName="RolaID" />
+          <ScalarProperty Name="BlokujacyID" ColumnName="BlokujacyID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,51 @@
+﻿Pozostało:
+
+- walidacja
+
+a) faktury sprzedaży
+    
+- nowy
+    
+- edycja
+    
+- usuwanie
+  
+b) produkty faktury sprzdaży
+  
+- rozliczenia faktury sprzedaży
+
+c) klienci
+  
+- nowy
+  
+- lista
+  
+- edycja
+  
+- usuwanie
+
+d) towry i usługi
+  
+- dodawanie (skończyć)
+  
+- edycja
+  
+- usuwanie
+
+e) faktury kupna
+    
+- nowy
+    
+- lista
+    
+- edycja
+    
+- usuwanie
+  
+f) produkty faktury kupna
+  
+g) rozliczenie faktury kupna
+
+h) szukanie w fakturach kupna i sprzedaży
+- pdf
+  

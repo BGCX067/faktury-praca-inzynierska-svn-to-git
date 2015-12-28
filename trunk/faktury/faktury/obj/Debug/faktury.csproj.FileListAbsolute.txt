@@ -1,0 +1,10 @@
+D:\Informatyka\zzz Faktury\faktury\faktury\bin\faktury.dll
+D:\Informatyka\zzz Faktury\faktury\faktury\bin\faktury.pdb
+D:\Informatyka\zzz Faktury\faktury\faktury\obj\Debug\ResolveAssemblyReference.cache
+D:\Informatyka\zzz Faktury\faktury\faktury\obj\Debug\faktury.dll
+D:\Informatyka\zzz Faktury\faktury\faktury\obj\Debug\faktury.pdb
+D:\Projekty\Faktury\faktury\faktury\bin\faktury.dll
+D:\Projekty\Faktury\faktury\faktury\bin\faktury.pdb
+D:\Projekty\Faktury\faktury\faktury\obj\Debug\ResolveAssemblyReference.cache
+D:\Projekty\Faktury\faktury\faktury\obj\Debug\faktury.dll
+D:\Projekty\Faktury\faktury\faktury\obj\Debug\faktury.pdb
